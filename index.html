@@ -19,24 +19,45 @@
       <!-- Player Container -->
       <div class="player-container" id="player">
         <h2>
-          You - <span id="player-score">0</span
-          ><span class="choice" id="player-choice"> ---Choice </span>
+          You - <span id="player-score"></span
+          ><span class="choice" id="player-choice"></span>
         </h2>
-        <i class="far fa-hand-rock" title="rock" id="player-rock"></i>
-        <i class="far fa-hand-paper" title="paper" id="player-paper"></i>
+        <i
+          class="far fa-hand-rock"
+          title="rock"
+          id="player-rock"
+          onclick="select('rock')"
+        ></i>
+        <i
+          class="far fa-hand-paper"
+          title="paper"
+          id="player-paper"
+          onclick="select('paper')"
+        ></i>
         <i
           class="far fa-hand-scissors"
           title="scissors"
           id="player-scissors"
+          onclick="select('scissors')"
         ></i>
-        <i class="far fa-hand-lizard" title="lizard" id="player-lizard"></i>
-        <i class="far fa-hand-spock" title="spock" id="player-spock"></i>
+        <i
+          class="far fa-hand-lizard"
+          title="lizard"
+          id="player-lizard"
+          onclick="select('lizard')"
+        ></i>
+        <i
+          class="far fa-hand-spock"
+          title="spock"
+          id="player-spock"
+          onclick="select('spock')"
+        ></i>
       </div>
       <!-- Computer Container -->
       <div class="player-container" id="computer">
         <h2>
-          Computer - <span id="computer-score">0</span
-          ><span class="choice" id="computer-choice"> ---Choice </span>
+          Computer - <span id="computer-score"></span
+          ><span class="choice" id="computer-choice"></span>
         </h2>
         <i class="far fa-hand-rock" title="rock" id="computer-rock"></i>
         <i class="far fa-hand-paper" title="paper" id="computer-paper"></i>
@@ -49,13 +70,17 @@
         <i class="far fa-hand-spock" title="spock" id="computer-spock"></i>
       </div>
       <!-- Rest Icon -->
-      <i class="fas fa-sync-alt reset-icon" title="Reset"></i>
+      <i
+        class="fas fa-sync-alt reset-icon"
+        title="Reset"
+        onclick="resetAll()"
+      ></i>
       <!-- Results Text -->
       <div class="result-container">
         <h3 class="result-text" id="result-text">You Won!</h3>
       </div>
     </div>
     <!-- Script -->
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
